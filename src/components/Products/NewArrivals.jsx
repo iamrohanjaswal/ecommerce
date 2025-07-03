@@ -148,14 +148,15 @@ useEffect(()=>{
     if(container){
         container.addEventListener("scroll", updateScrollButtons);
         updateScrollButtons();
+        return () =>container.removeEventListener("scroll", updateScrollButtons);
     }
-})
+},[]);
 
 
 
 
   return (
-    <section>
+    <section className="py-16 px-4 lg:px-0">
         <div className="container mx-auto text-center mb-10 relative">
             <h2 className='text-3xl font-bold mb-4'>
                 Explore New Arrivals
