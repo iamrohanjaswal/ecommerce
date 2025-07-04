@@ -48,7 +48,7 @@ const ProductDetails = () => {
                         />
                 ))}
             </div>
-
+            
             {/* Main Image */}
             <div className="md:w-1/2">
                 <div className="mb-4">
@@ -61,7 +61,7 @@ const ProductDetails = () => {
             </div>
                 
                 {/* Mobile Thumbnails */}
-                <div className="md:hidden flex overscroll-x-scroll space-x-4 mb-4">
+                <div className="md:hidden flex overscroll-x-scroll space-x-4 mb-4 ">
                 {selectedProduct.images.map((image, index)=>(
                     <img
                         key={index}
